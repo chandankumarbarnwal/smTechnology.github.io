@@ -1,0 +1,154 @@
+1. opacity:0.3;
+	To give transparent of color
+
+
+2. z-index: -1
+	To specify which one will appear first	
+
+3. To make a tag under line none (By default underline)
+	li tag style (default . before text)
+
+	Make for  all by default any where in code. If we forgot then will show fefault style.
+
+	a{ text-decoration: none; }
+
+	a:hover{ text-decoration: none; }
+
+	li{ list-style: none; }
+
+4. To bring some tag in center perfectly for all device
+
+	//main div make position relative
+
+	.header-section {
+		width: 100%;
+		height: inherit;
+		color: white;
+		text-align: center;
+		position: relative;
+	}
+
+	// sub-main div position absolute
+	// top:50%, left:50% and transform
+
+	.center-div {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+	}
+
+
+
+5. Bootstrap also provides mechanism to create navbar that is fixed on the top or bottom of the viewport
+	 and will scroll with the content on the page. Not header or footer
+
+	Creating the Fixed to Top Navbar
+	Apply the position utility class .fixed-top to the .navbar element to fix the navbar at the top of the viewport, so that it won't scroll with the page. Here's an example:
+
+	<nav class="navbar navbar-expand-lg fixed-top">
+
+
+6. To make hover effect and move in y direction 
+
+.extra-div:hover{
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	transform: translateY(-20px);
+}
+
+
+7. to make in 1 line
+
+<div class="container d-flex justify-content-around align-item-center ">
+			<div>
+				<h1>1500</h1>
+				<p>CMS Installation</p>
+			</div>
+
+			<div>
+				<h1>2500</h1>
+				<p>Awards Won</p>
+			</div>
+
+			<div>
+				<h1>700</h1>
+				<p>Happy clients</p>
+			</div>
+
+			<div>
+				<h1>500</h1>
+				<p>Working On</p>
+			</div>
+			
+		</div>
+
+
+8. on visit website increment count number using jquery plugins
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$('.count').counterUp({
+		delay:10,
+		time:1000
+	});
+</script>
+
+
+
+9. Give icon to scroll top.
+
+
+<div class="scrolltop float-right">
+				<i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+</div>
+
+
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function (){scrollFunction()}; 
+
+function scrollFunction(){
+	if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+		mybutton.style.display = "block";
+	}else{
+		mybutton.style.display = "none";
+	}	
+}
+
+function topFunction(){
+	document.body.scrollTop = 0; 
+	document.documentElement.scrollTop = 0; 
+}
+
+
+
+10.   Create div and giv id and that id give in href, so when we click then it eill redirect to that div only.
+
+
+	<li class="nav-item">
+							<a class="nav-link" href="#newsletterid">About</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="#contactid">Contact</a>
+						</li>
+
+
+
+
+
+
+
